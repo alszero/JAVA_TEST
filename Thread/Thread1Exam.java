@@ -15,3 +15,4 @@ public class Thread1Exam {
         System.out.println("프로그램 종료");
     }
 }
+// 실행 순서가 순차적이지 않음을 확인할 수 있다.
