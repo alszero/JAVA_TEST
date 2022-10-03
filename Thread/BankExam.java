@@ -17,7 +17,7 @@ class Bank {
         int m = this.getMoney();//입금되어 있는 돈을 가져옴
         try {
             Thread.sleep(500); //0.5초 정지
-        } catch (InterruptedException e) {
+        } catch (InterruptedException e) {  // 입출력시 인터럽트가 발생한 경우?
             e.printStackTrace();
         }
         this.setMoney(m+save);

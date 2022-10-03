@@ -11,8 +11,8 @@ public class FlleExam {
             while((c= fr.read()) != -1){
                 fw.write(c);
             }
-        }catch (Exception e){
-            System.out.println(e.toString());
+        }catch (Exception e){   // IOException과 FileNotFoundException을 모두 처리할 수 있는 Exception 클래스 넣어줌
+            System.out.println(e.toString()); // to String() 예외 클래스와 해당 객체에 포함된 에러 메세지 얻음
         }
     }
 }

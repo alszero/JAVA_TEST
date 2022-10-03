@@ -27,7 +27,7 @@ public class Echo2Exam {
             while (true) {
                 int i = is.read();
                 if (i == -1) break;
-                System.out.println((char) i);
+                System.out.print((char) i);
             }
         } catch (IOException e) {
             e.printStackTrace();
