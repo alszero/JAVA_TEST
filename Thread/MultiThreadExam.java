@@ -2,9 +2,9 @@ package Thread;
 
 class Summing{  // 숫자를 1~num까지 더하는 클래스
     private int sum;
-    public synchronized void sumTo(int num){    //더하는 메서드
+    public synchronized void sumTo(int num){    //더하는 메서드, 동기화한 경우
         sum=0;
-        for (int i = 1; i <= num; i++) {
+        for (int i = 2; i <= num; i++) {
             sum+=i;
             System.out.println("스레드 :"+Thread.currentThread().getName());
             System.out.println("의 1~"+i+"까지 합은"+sum);
